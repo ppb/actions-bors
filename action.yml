@@ -1,12 +1,12 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Bors Labeller'
+description: 'Labels PRs that have been sent to bors'
+author: 'astronouth7303'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  foo:
+    description: 'bar'
+    default: '-'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.foo }}
