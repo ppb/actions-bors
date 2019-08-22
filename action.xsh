@@ -7,4 +7,4 @@ print($ARGS)
 for k, v in ${...}.items():
     print(k, ":", repr(v))
 
-pprint(json.loads(p"$GITHUB_EVENT_PATH"))
+pprint(json.loads(p"$GITHUB_EVENT_PATH".read_text()))
