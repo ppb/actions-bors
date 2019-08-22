@@ -11,4 +11,3 @@ for k, v in sorted(${...}.items()):
     if k in ('INPUT', 'GITHUB_EVENT'):
         continue
     print(k, ":", repr(v))
-
