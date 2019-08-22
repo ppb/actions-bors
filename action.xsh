@@ -2,8 +2,6 @@
 import json
 from pprint import pprint
 
-print($ARGS)
-
 pprint($INPUT)
 
 pprint($GITHUB_EVENT)
