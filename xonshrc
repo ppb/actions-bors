@@ -7,3 +7,7 @@ $INPUT = {
     for k, v in ${...}.items()
     if k.startswith('INPUT_')
 }
+
+if 'GITHUB_TOKEN' in $INPUT:
+    from github import Github
+    $GITHUB = Github($INPUT['GITHUB_TOKEN'])
