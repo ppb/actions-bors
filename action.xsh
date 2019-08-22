@@ -1,6 +1,10 @@
 #!/usr/bin/xonsh
-import sys
+import json
+from pprint import pprint
 
-print(sys.argv)
+print($ARGS)
 
-env
+for k, v in ${...}.items():
+    print(k, ":" repr(v))
+
+pprint(json.loads(p"$GITHUB_EVENT_PATH"))
