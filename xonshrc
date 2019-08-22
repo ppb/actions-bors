@@ -11,3 +11,6 @@ $INPUT = {
 if 'GITHUB_TOKEN' in $INPUT:
     from github import Github
     $GITHUB = Github($INPUT['GITHUB_TOKEN'])
+elif 'GITHUB_TOKEN' in ${...}:
+    from github import Github
+    $GITHUB = Github($GITHUB_TOKEN)
