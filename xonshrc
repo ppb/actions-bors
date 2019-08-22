@@ -1,0 +1,9 @@
+import json
+
+$GITHUB_EVENT = json.loads(p"$GITHUB_EVENT_PATH".read_text())
+
+$INPUT = {
+    k[len('INPUT_'):]: v
+    for k, v in ${...}.items()
+    if k.startswith('INPUT_')
+}

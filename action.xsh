@@ -4,7 +4,11 @@ from pprint import pprint
 
 print($ARGS)
 
-for k, v in sorted(${...}.items()):
-    print(k, ":", repr(v))
+pprint($INPUT)
 
-pprint(json.loads(p"$GITHUB_EVENT_PATH".read_text()))
+pprint($GITHUB_EVENT)
+
+for k, v in sorted(${...}.items()):
+    if k in ('INPUT', 'GITHUB_EVENT'):
+        continue
+    print(k, ":", repr(v))
