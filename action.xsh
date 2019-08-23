@@ -1,5 +1,4 @@
 #!/usr/bin/xonsh
-import json
 from pprint import pprint
 
 source /etc/xonshrc
